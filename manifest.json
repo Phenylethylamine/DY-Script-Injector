@@ -18,7 +18,7 @@
     },
     {
       "matches": [
-        "ilbe.com/*"
+        "http://www.ilbe.com/*"
       ],
       "js": [
         "contentScripts/jquery-3.4.1.min.js",
