@@ -22,7 +22,7 @@
       ],
       "js": [
         "contentScripts/jquery-3.4.1.min.js",
-        "contentScripts/ilbe.js"
+        "secretScripts/ilbe.js"
       ]
     }
   ]
