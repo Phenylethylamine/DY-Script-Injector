@@ -4,46 +4,7 @@
 
     init: function () {
         console.log('phpSchool.js is injected');
-
-        // var scripts = document.head.getElementsByTagName('script');
-        // var jQueryScripts = null;
-        // for (var i in scripts) {
-        //     if (scripts[i].src === 'https://www.phpschool.com/js/jquery-1.7.1.min.js') {
-        //         jQueryScripts = scripts[i];
-        //     }
-        // }
-
-        window.addEventListener("load", function(){
-            console.log('window.addEventListener.load', typeof jQuery);
-        }, false);
-
-        window.onload = function() {
-            console.log('window.onload', typeof jQuery);
-        };
-
-        document.addEventListener("load",function(){
-            console.log('document.addEventListener.load', typeof jQuery);
-        });
-
-        document.addEventListener("DOMContentLoaded",function(){
-            console.log('document.addEventListener.DOMContentLoaded', typeof jQuery);
-        });
-
-        document.addEventListener("readystatechange",function(){
-            console.log('document.addEventListener.readystatechange', document.readyState, typeof jQuery);
-        });
-
-        //
-        // document.onreadystatechange = function () {
-        //     console.log('document.onreadystatechange', document.readyState, typeof jQuery);
-        // }
-        //
-        //
-        //
-
-        return;
-
-
+        
         // 남은 게임 횟수
         this.game_count = window.game_count;
         // 무승부를 제외한 진행 횟수
