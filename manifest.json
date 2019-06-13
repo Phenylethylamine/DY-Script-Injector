@@ -27,7 +27,8 @@
     },
     {
       "matches": [
-        "*://*.mt.co.kr/*"
+        "*://*.mt.co.kr/*",
+        "*://*.ttimes.co.kr/*"
       ],
       "js": [
         "contentScripts/MtDev.js"
