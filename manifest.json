@@ -18,11 +18,10 @@
     },
     {
       "matches": [
-        "http://www.ilbe.com/*"
+        "*://*.mt.co.kr/*"
       ],
       "js": [
-        "contentScripts/jquery-3.4.1.min.js",
-        "secretScripts/ilbe.js"
+        "contentScripts/mtdev.js"
       ]
     }
   ]

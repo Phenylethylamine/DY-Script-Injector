@@ -1,10 +1,8 @@
 // phpschool 가위바위보
 ({
-
-
     init: function () {
         console.log('phpSchool.js is injected');
-        
+
         // 남은 게임 횟수
         this.game_count = window.game_count;
         // 무승부를 제외한 진행 횟수
@@ -15,13 +13,13 @@
         this.game_result = [];
         // 이벤트(Enter)
         var that = this;
-        jQuery(document).on('keypress', function (e) {
+        jQuery(document).on('keypress', (function (e) {
             if (e.which !== 13 || !confirm('가위바위보 !')) {
                 return;
             }
             console.log('게임시작 : ' + this.game_count + '회');
             that.action();
-        });
+        }).bind(this));
         console.log("Initialize Complete");
     },
 
@@ -121,5 +119,4 @@
         text.push('패 : ' + report['패'] + '(' + report['패비율'] + '%)');
         console.log(text.join("\n"));
     }
-
 }).init();
