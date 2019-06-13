@@ -9,11 +9,20 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.phpschool.com/community/rock_paper_scissors.php"
+        "<all_urls>"
       ],
       "js": [
-        "contentScripts/jquery-3.4.1.min.js",
-        "contentScripts/phpSchool.js"
+        "lib/jquery-3.4.1.min.js",
+        "contentScripts/Common.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.phpschool.com/community/rock_paper_scissors.php",
+        "https://www.phpschool.com/community/mobile_gawibawibo_v2.php"
+      ],
+      "js": [
+        "contentScripts/PhpSchool.js"
       ]
     },
     {
@@ -21,7 +30,7 @@
         "*://*.mt.co.kr/*"
       ],
       "js": [
-        "contentScripts/mtdev.js"
+        "contentScripts/MtDev.js"
       ]
     }
   ]
